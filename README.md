@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```
 
 ### Scrapy
-1. Go to the scrapy project directory `bild_archive_scraper`:
+1. Go to the scrapy project directory e.g. `bild_archive_scraper`:
 ```bash
 cd bild_archive_scraper
 ```
