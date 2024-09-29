@@ -69,7 +69,7 @@ pipreqs /Users/username/projects/<name>-gpt
 source venv/bin/activate
 ```
 
-#### Activate venv
+#### Deactivate venv
 ```bash
 deactivate
 ```
