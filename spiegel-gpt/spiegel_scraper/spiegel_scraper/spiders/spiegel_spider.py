@@ -10,8 +10,7 @@ class SpiegelSpider(scrapy.Spider):
     allowed_domains = ["spiegel.de"]
 
     # Liste von Datumswerten
-    # dates = ["19.12.2016", "20.12.2016", "21.12.2016", "22.12.2016", "23.12.2016"]
-    dates = ["19.12.2016"]
+    dates = ["19.12.2016", "20.12.2016", "21.12.2016", "22.12.2016", "23.12.2016"]
 
     # URLs basierend auf den Datumswerten
     start_urls = [f"https://www.spiegel.de/nachrichtenarchiv/artikel-{date}.html" for date in dates]
@@ -60,8 +59,6 @@ class SpiegelSpider(scrapy.Spider):
 
         # Herunterladen der gefilterten Artikel
         for i, link in enumerate(filtered_links):
-            if i >= 5:
-                break
             # Verwende urljoin, um den vollständigen Link zu erhalten
             full_link = urljoin(response.url, link)
 
