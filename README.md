@@ -42,7 +42,7 @@ scrapy crawl <spider-name>
 Now there should be a folder named `training_set`. To filter these pdfs, there is a file in the `utils` folder to filter all the pdf files by searching for specific keywords. If needed, please run this file and modify the folder paths.
 
 ### Chatbot with OpenAI model
-1. Add your OpenAI API key in the file `config.py`: 
+1. Add your OpenAI API key in the file `config.py`. For that duplicate the file `configTEMPLATE.py` and rename it to `config.py`: 
 ```bash
 os.environ["OPENAI_API_KEY"] = 'YOUR API KEY'
 ```
